@@ -1,19 +1,10 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import config from '../../helpers/config';
 
-interface SeoProps {
-  data: {
-    title?: string;
-    description?: string;
-    thumbnail?: string;
-  };
-}
-
-const Seo: React.FC<SeoProps> = ({
-  data: { title, description, thumbnail },
-}) => {
+const Seo: React.FC = () => {
+  const { seo } = config;
   const { asPath } = useRouter();
-  const thumbnailImage = thumbnail || '';
 
   return (
     <Head>
@@ -21,19 +12,19 @@ const Seo: React.FC<SeoProps> = ({
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
       />
-      <meta property="og:title" content={title} />
-      <meta name="description" content={description} />
+      <meta property="og:title" content={seo.title} />
+      <meta name="description" content={seo.description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={`${asPath}`} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={thumbnailImage} />
-      <meta name="twitter:image" content={thumbnailImage} />
+      <meta property="og:description" content={seo.description} />
+      <meta property="og:image" content={seo.thumbnail} />
+      <meta name="twitter:image" content={seo.thumbnail} />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={seo.title} />
+      <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:domain" content={`${asPath}`} />
       <link href={`${asPath}`} rel="canonical" data-cy="canonical-link" />
-      <title>{title}</title>
+      <title>{seo.title}</title>
     </Head>
   );
 };
