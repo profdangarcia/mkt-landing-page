@@ -10,6 +10,7 @@ const config = {
     videoCta: 'Veja o vídeo de nossa solução',
     videoTitle: 'Nossa solução',
   },
+  logo: '/logo.png',
 };
 
 export default config;

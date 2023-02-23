@@ -1,4 +1,5 @@
 import { Flex, Heading } from '@chakra-ui/react';
+import Image from 'next/image';
 import Footer from '../components/Footer';
 import Seo from '../components/Seo';
 import VideoSection from '../components/VideoSection';
@@ -11,14 +12,14 @@ const Home: React.FC = () => {
       <Seo />
 
       <Wrapper>
-        <Flex
-          as="main"
-          py="0.5rem"
-          direction="column"
-          align="center"
-          minH="100vh"
-        >
-          <Heading as="h1" mb={16} mt={8} color="brand.800">
+        <Flex as="main" direction="column" align="center" minH="100vh" py={8}>
+          <Image
+            src={config.logo}
+            alt={config.seo.title}
+            width={200}
+            height={118}
+          />
+          <Heading as="h1" mb={16} mt={4} color="brand.800">
             {config.seo.h1}
           </Heading>
 
