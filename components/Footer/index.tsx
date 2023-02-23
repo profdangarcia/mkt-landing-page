@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
       align="center"
       borderTop={`1px solid ${theme.colors.brand['600']}`}
     >
+      Desenvolvido por
       <Link
         href="https://dangarcia-devel.vercel.app/"
         isExternal
         display="flex"
       >
-        Desenvolvido por
         <Text as="span" ml="0.25rem" display="block" fontWeight="bold">
           Dan Garcia ☕
         </Text>

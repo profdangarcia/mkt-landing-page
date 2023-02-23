@@ -1,14 +1,17 @@
 /* eslint-disable import/prefer-default-export */
 
 import { extendTheme } from '@chakra-ui/react';
+import config from '../helpers/config';
+
+const { palette } = config;
 
 export const theme = extendTheme({
   colors: {
     brand: {
-      900: '#2C3333',
-      800: '#395B64',
-      700: '#A5C9CA',
-      600: '#E7F6F2',
+      900: palette[900],
+      800: palette[800],
+      700: palette[700],
+      600: palette[600],
     },
   },
   fonts: {

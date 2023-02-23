@@ -1,12 +1,12 @@
 /* eslint-disable react/style-prop-object */
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Text, Link, Button } from '@chakra-ui/react';
 import config from '../../helpers/config';
 
 const VideoSection: React.FC = () => {
   const { cta } = config;
   return (
-    <Flex direction="column" w="100%" align="center">
-      <Text textAlign="center" fontSize={24} mb={8}>
+    <Flex direction="column" w="100%" align="center" gap={8} justify="center">
+      <Text textAlign="center" fontSize={24}>
         {cta.videoCta}
       </Text>
       <Flex w="100%" pb="56.25%" position="relative">
@@ -18,6 +18,21 @@ const VideoSection: React.FC = () => {
           style={{ width: '100%', height: '100%', position: 'absolute' }}
         />
       </Flex>
+      <Text fontSize={28} fontWeight="bold">
+        {cta.videoCtaClick}
+      </Text>
+      <Link href={cta.checkoutUrl} isExternal w="90%">
+        <Button
+          color="brand.600"
+          bg="brand.800"
+          w="100%"
+          h={28}
+          fontSize={32}
+          _hover={{ bg: 'brand.700' }}
+        >
+          {cta.videoCtaButton}
+        </Button>
+      </Link>
     </Flex>
   );
 };
