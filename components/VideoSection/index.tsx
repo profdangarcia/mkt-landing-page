@@ -18,7 +18,7 @@ const VideoSection: React.FC = () => {
           style={{ width: '100%', height: '100%', position: 'absolute' }}
         />
       </Flex>
-      <Text fontSize={28} fontWeight="bold">
+      <Text fontSize={28} fontWeight="bold" textAlign="center">
         {cta.videoCtaClick}
       </Text>
       <Link href={cta.checkoutUrl} isExternal w="90%">
@@ -26,7 +26,7 @@ const VideoSection: React.FC = () => {
           color="brand.600"
           bg="brand.800"
           w="100%"
-          h={28}
+          h={24}
           fontSize={32}
           _hover={{ bg: 'brand.700' }}
         >
