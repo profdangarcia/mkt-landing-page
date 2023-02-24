@@ -2,6 +2,7 @@ import { Flex, Heading } from '@chakra-ui/react';
 import Image from 'next/image';
 import About from '../components/About';
 import CtaSection from '../components/CtaSection';
+import FloatingWhatsapp from '../components/FloatingWhatsapp';
 import Footer from '../components/Footer';
 import ResultsSection from '../components/ResultsSection';
 import Seo from '../components/Seo';
@@ -22,7 +23,7 @@ const Home: React.FC = () => {
             width={200}
             height={118}
           />
-          <Heading as="h1" mb={16} mt={4} color="brand.800">
+          <Heading as="h1" mb={16} mt={4} color="brand.700">
             {config.seo.h1}
           </Heading>
 
@@ -34,6 +35,7 @@ const Home: React.FC = () => {
       <About />
       <CtaSection />
       <Footer />
+      <FloatingWhatsapp />
     </>
   );
 };

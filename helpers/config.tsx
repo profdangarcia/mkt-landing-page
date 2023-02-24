@@ -79,6 +79,10 @@ const config = {
       url: '#',
     },
   ],
+  whatsapp: {
+    number: '999999999',
+    message: 'Olá, vi seu trabalho pelo site MKT Landing Page!',
+  },
 };
 
 export default config;
