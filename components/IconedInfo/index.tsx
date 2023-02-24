@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 type Props = {
   icon: ReactNode;
   title: string;
-  info: string;
+  info?: string;
 };
 
 const IconedInfo: React.FC<Props> = ({ icon, title, info }) => {
@@ -24,7 +24,7 @@ const IconedInfo: React.FC<Props> = ({ icon, title, info }) => {
         <Text fontWeight="bold" fontSize="1.125rem">
           {title}
         </Text>
-        <Text fontStyle="italic">{info}</Text>
+        {!!info && <Text fontStyle="italic">{info}</Text>}
       </Flex>
     </Flex>
   );

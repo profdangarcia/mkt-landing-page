@@ -6,7 +6,7 @@ import Wrapper from '../Wrapper';
 const ResultsSection: React.FC = () => {
   const { results } = config;
   return (
-    <Box w="100%" bg="brand.600" py={4}>
+    <Box w="100%" bg="brand.600" py={8}>
       <Wrapper>
         <Flex direction="column" w="100%" gap={12} justify="center">
           <Heading textAlign="center" color="brand.800">

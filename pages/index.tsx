@@ -1,5 +1,6 @@
 import { Flex, Heading } from '@chakra-ui/react';
 import Image from 'next/image';
+import CtaSection from '../components/CtaSection';
 import Footer from '../components/Footer';
 import ResultsSection from '../components/ResultsSection';
 import Seo from '../components/Seo';
@@ -28,7 +29,7 @@ const Home: React.FC = () => {
         </Flex>
       </Wrapper>
       <ResultsSection />
-
+      <CtaSection />
       <Footer />
     </>
   );

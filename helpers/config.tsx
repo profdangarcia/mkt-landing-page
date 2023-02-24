@@ -1,3 +1,5 @@
+import { ImBarcode, ImQrcode, ImCreditCard } from 'react-icons/im';
+
 const config = {
   seo: {
     title: 'MKT Landing Page | CTA Helper',
@@ -12,6 +14,7 @@ const config = {
     videoCtaClick: 'Adquira agora nossa solução:',
     videoCtaButton: 'QUERO COMEÇAR!',
     checkoutUrl: 'https://www.google.com',
+    ctaButton: 'QUERO APROVEITAR!',
   },
   results: {
     title: 'Métodos que dão resultados como esses:',
@@ -30,6 +33,20 @@ const config = {
       },
     ],
   },
+  payments: [
+    {
+      text: 'Cartão',
+      icon: <ImCreditCard />,
+    },
+    {
+      text: 'Boleto',
+      icon: <ImBarcode />,
+    },
+    {
+      text: 'PIX',
+      icon: <ImQrcode />,
+    },
+  ],
   logo: '/logo.png',
   palette: {
     900: '#2F2F2F',
