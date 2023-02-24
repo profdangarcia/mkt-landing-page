@@ -3,7 +3,7 @@ const config = {
     title: 'MKT Landing Page | CTA Helper',
     description: 'Uma página para divulgação de produtos',
     h1: 'MKT Landing Page',
-    thumbnail: '/thumbnail.jpg',
+    thumbnail: 'https://mkt-landing-page-livid.vercel.app/thumbnail.jpg',
   },
   cta: {
     videoId: '9w3o9NHXqu0',
