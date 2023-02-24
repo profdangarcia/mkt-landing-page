@@ -1,5 +1,4 @@
-import { Flex, Link, Text, useTheme, Box, keyframes } from '@chakra-ui/react';
-import { MdAccountTree } from 'react-icons/md';
+import { Flex, Link, Text, Box, keyframes } from '@chakra-ui/react';
 import config from '../../helpers/config';
 
 const animateWave = keyframes`
