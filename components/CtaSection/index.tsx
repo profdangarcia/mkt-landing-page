@@ -16,11 +16,11 @@ const CtaSection: React.FC = () => {
           >
             <Button
               color="brand.600"
-              bg="brand.700"
+              bg="brand.800"
               w="100%"
               h={24}
               fontSize="2rem"
-              _hover={{ bg: 'brand.800' }}
+              _hover={{ bg: 'brand.700' }}
             >
               {cta.ctaButton}
             </Button>

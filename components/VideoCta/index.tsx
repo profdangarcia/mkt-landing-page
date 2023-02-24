@@ -15,11 +15,11 @@ const VideoCta: React.FC = () => {
       <Link href={cta.checkoutUrl} isExternal w={{ base: '100%', md: '90%' }}>
         <Button
           color="brand.600"
-          bg="brand.700"
+          bg="brand.800"
           w="100%"
           h={24}
           fontSize="2rem"
-          _hover={{ bg: 'brand.800' }}
+          _hover={{ bg: 'brand.700' }}
         >
           {cta.videoCtaButton}
         </Button>

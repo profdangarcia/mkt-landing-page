@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
       as="footer"
       position="relative"
       w="100%"
-      bg="brand.700"
+      bg="brand.800"
       minH="6.25rem"
       justify="center"
       align="center"

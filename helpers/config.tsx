@@ -58,8 +58,8 @@ const config = {
   logo: '/logo.png',
   palette: {
     900: '#202020',
-    700: '#009B9D',
-    800: '#00CACA',
+    800: '#009B9D',
+    700: '#00CACA',
     600: '#F9F9F9',
   },
   socials: [

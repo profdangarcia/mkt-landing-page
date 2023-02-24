@@ -9,7 +9,7 @@ const ResultsSection: React.FC = () => {
     <Box w="100%" bg="brand.600" py={8}>
       <Wrapper>
         <Flex direction="column" w="100%" gap={12} justify="center">
-          <Heading textAlign="center" color="brand.700">
+          <Heading textAlign="center" color="brand.800">
             {results.title}
           </Heading>
           <Flex direction="column" gap={8} w="100%">
