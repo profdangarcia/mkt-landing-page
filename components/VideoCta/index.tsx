@@ -12,7 +12,7 @@ const VideoCta: React.FC = () => {
       <Text fontSize={28} fontWeight="bold" textAlign="center">
         {cta.videoCtaClick}
       </Text>
-      <Link href={cta.checkoutUrl} isExternal w="90%">
+      <Link href={cta.checkoutUrl} isExternal w={{ base: '100%', md: '90%' }}>
         <Button
           color="brand.600"
           bg="brand.800"

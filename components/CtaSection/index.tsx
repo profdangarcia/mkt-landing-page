@@ -9,7 +9,11 @@ const CtaSection: React.FC = () => {
     <Box w="100%" bg="brand.900" py={4}>
       <Wrapper>
         <Flex align="center" direction="column" gap={8}>
-          <Link href={cta.checkoutUrl} isExternal w="95%">
+          <Link
+            href={cta.checkoutUrl}
+            isExternal
+            w={{ base: '100%', md: '90%' }}
+          >
             <Button
               color="brand.600"
               bg="brand.700"
