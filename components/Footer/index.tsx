@@ -1,27 +1,114 @@
-import { Flex, Link, Text, useTheme } from '@chakra-ui/react';
+import { Flex, Link, Text, useTheme, Box, keyframes } from '@chakra-ui/react';
+import { MdAccountTree } from 'react-icons/md';
+import config from '../../helpers/config';
+
+const animateWave = keyframes`
+  0% {
+    background-position-x: 62.5rem;
+  }
+  100% {
+    background-position-x: 0;
+  }
+`;
+
+const opositeAnimateWave = keyframes`
+  0% {
+    background-position-x: -62.5rem;
+  }
+  100% {
+    background-position-x: 0;
+  }
+`;
 
 const Footer: React.FC = () => {
-  const theme = useTheme();
-
+  const year = new Date().getFullYear();
+  const { socials } = config;
   return (
     <Flex
       as="footer"
+      position="relative"
       w="100%"
-      h="4.25rem"
+      bg="brand.800"
+      minH="6.25rem"
       justify="center"
       align="center"
-      borderTop={`1px solid ${theme.colors.brand['600']}`}
+      direction="column"
+      mt="6.35rem"
     >
-      Desenvolvido por
-      <Link
-        href="https://dangarcia-devel.vercel.app/"
-        isExternal
-        display="flex"
-      >
-        <Text as="span" ml="0.25rem" display="block" fontWeight="bold">
-          Dan Garcia ☕
-        </Text>
-      </Link>
+      <Box>
+        <Box
+          position="absolute"
+          top="-6.25rem"
+          left="0"
+          w="100%"
+          h="6.25rem"
+          bg="url(/wave.png)"
+          backgroundSize="62.5rem 6.25rem"
+          zIndex={1000}
+          opacity="1"
+          bottom="0"
+          animation={`${animateWave} 4s linear infinite`}
+        />
+        <Box
+          position="absolute"
+          top="-6.25rem"
+          left="0"
+          w="100%"
+          h="6.25rem"
+          bg="url(/wave.png)"
+          backgroundSize="62.5rem 6.25rem"
+          zIndex={999}
+          opacity="0.5"
+          bottom="0.625rem"
+          animation={`${opositeAnimateWave} 4s linear infinite`}
+        />
+        <Box
+          position="absolute"
+          top="-6.25rem"
+          left="0"
+          w="100%"
+          h="6.25rem"
+          bg="url(/wave.png)"
+          backgroundSize="62.5rem 6.25rem"
+          zIndex={1000}
+          opacity="0.2"
+          bottom="0.9375rem"
+          animation={`${animateWave} 3s linear infinite`}
+        />
+        <Box
+          position="absolute"
+          top="-6.25rem"
+          left="0"
+          w="100%"
+          h="6.25rem"
+          bg="url(/wave.png)"
+          backgroundSize="62.5rem 6.25rem"
+          zIndex={999}
+          opacity="0.7"
+          bottom="1.25rem"
+          animation={`${opositeAnimateWave} 3s linear infinite`}
+        />
+      </Box>
+      <Flex as="ul" justify="center" align="center" my={2} wrap="wrap" gap={8}>
+        {socials.map(social => (
+          <Flex
+            key={social.name}
+            as="li"
+            listStyleType="none"
+            fontSize="2rem"
+            color="brand.600"
+            transition="0.5s"
+            _hover={{ transform: 'translateY(-0.6rem)' }}
+          >
+            <Link href={social.url} isExternal>
+              {social.icon}
+            </Link>
+          </Flex>
+        ))}
+      </Flex>
+      <Text color="brand.600">
+        &copy;{`${year} ${config.brand}`} | Todos os direitos Reservados
+      </Text>
     </Flex>
   );
 };

@@ -1,6 +1,8 @@
 import { ImBarcode, ImQrcode, ImCreditCard } from 'react-icons/im';
+import { BsFacebook, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 
 const config = {
+  brand: 'MKT Landing Page',
   seo: {
     title: 'MKT Landing Page | CTA Helper',
     description: 'Uma página para divulgação de produtos',
@@ -60,6 +62,23 @@ const config = {
     700: '#00CACA',
     600: '#F9F9F9',
   },
+  socials: [
+    {
+      name: 'Facebook',
+      icon: <BsFacebook />,
+      url: '#',
+    },
+    {
+      name: 'Instagram',
+      icon: <BsInstagram />,
+      url: '#',
+    },
+    {
+      name: 'Whatsapp',
+      icon: <BsWhatsapp />,
+      url: '#',
+    },
+  ],
 };
 
 export default config;
