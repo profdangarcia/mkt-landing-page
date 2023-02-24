@@ -33,6 +33,7 @@ const Footer: React.FC = () => {
       align="center"
       direction="column"
       mt="6.35rem"
+      px={2}
     >
       <Box>
         <Box

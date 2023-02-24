@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             width={200}
             height={118}
           />
-          <Heading as="h1" mb={16} mt={4} color="brand.700">
+          <Heading as="h1" mb={16} mt={4} color="brand.700" textAlign="center">
             {config.seo.h1}
           </Heading>
 
