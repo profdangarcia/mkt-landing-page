@@ -15,7 +15,7 @@ const IconedInfo: React.FC<Props> = ({ icon, title, info }) => {
       gap={2}
       direction={{ base: 'column', md: 'row' }}
     >
-      <Box fontSize={32}>{icon}</Box>
+      <Box fontSize="2rem">{icon}</Box>
       <Flex
         direction="column"
         gap={1}

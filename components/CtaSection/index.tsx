@@ -19,7 +19,7 @@ const CtaSection: React.FC = () => {
               bg="brand.700"
               w="100%"
               h={24}
-              fontSize={32}
+              fontSize="2rem"
               _hover={{ bg: 'brand.800' }}
             >
               {cta.ctaButton}
