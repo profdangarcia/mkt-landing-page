@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
           </Flex>
         ))}
       </Flex>
-      <Text color="brand.600">
+      <Text color="brand.600" textAlign="center" mt={2} display="block">
         &copy;{`${year} ${config.brand}`} | Todos os direitos Reservados
       </Text>
     </Flex>
