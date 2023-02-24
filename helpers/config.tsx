@@ -13,12 +13,29 @@ const config = {
     videoCtaButton: 'QUERO COMEÇAR!',
     checkoutUrl: 'https://www.google.com',
   },
+  results: {
+    title: 'Métodos que dão resultados como esses:',
+    items: [
+      {
+        info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+        image: '/results/result1.png',
+      },
+      {
+        info: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+        image: '/results/result2.png',
+      },
+      {
+        info: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+        image: '/results/result3.png',
+      },
+    ],
+  },
   logo: '/logo.png',
   palette: {
     900: '#2F2F2F',
-    800: '#599B9A',
-    700: '#71B1BA',
-    600: '#FFFFFF',
+    800: '#009B9D',
+    700: '#00CACA',
+    600: '#F9F9F9',
   },
 };
 
