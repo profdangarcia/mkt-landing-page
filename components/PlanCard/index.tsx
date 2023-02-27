@@ -29,6 +29,16 @@ const PlanCard: React.FC<Props> = ({
 }) => {
   const theme = useTheme();
 
+  const highlightDefault = {
+    position: 'absolute',
+    content: '""',
+    'z-index': '-1',
+    display: 'block',
+    border: `0.4375rem solid ${theme.colors.plans[color]}`,
+    'border-top-color': 'transparent',
+    'border-left-color': 'transparent',
+  };
+
   return (
     <Flex
       bg="brand.600"
@@ -54,24 +64,12 @@ const PlanCard: React.FC<Props> = ({
           h="9.375rem"
           color="brand.600"
           _before={{
-            position: 'absolute',
-            content: '""',
-            'z-index': '-1',
-            display: 'block',
-            border: `0.4375rem solid ${theme.colors.plans[color]}`,
-            'border-top-color': 'transparent',
-            'border-left-color': 'transparent',
+            ...highlightDefault,
             top: '-0.25rem',
             right: '0.9rem',
           }}
           _after={{
-            position: 'absolute',
-            content: '""',
-            'z-index': '-1',
-            display: 'block',
-            border: `0.4375rem solid ${theme.colors.plans[color]}`,
-            'border-top-color': 'transparent',
-            'border-left-color': 'transparent',
+            ...highlightDefault,
             left: '-0.25rem',
             bottom: '0.80rem',
           }}
