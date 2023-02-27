@@ -64,7 +64,7 @@ const config = {
     plan1: '#009B9D',
     plan2: '#C23DF3',
     plan3: '#FCB353',
-    success: '#458A62',
+    success: '#43A047',
     error: '#FF1800',
   },
   socials: [
@@ -99,6 +99,20 @@ const config = {
         color: 'plan1',
         url: '#',
         highlight: false,
+        benefits: [
+          {
+            text: 'Atendimento 24h via whatsapp',
+            available: true,
+          },
+          {
+            text: 'Planilha de treinos exclusiva',
+            available: false,
+          },
+          {
+            text: 'Guia de dieta',
+            available: false,
+          },
+        ],
       },
       {
         title: 'Plano Trimestral',
@@ -108,6 +122,20 @@ const config = {
         color: 'plan2',
         url: '#',
         highlight: true,
+        benefits: [
+          {
+            text: 'Atendimento 24h via whatsapp',
+            available: true,
+          },
+          {
+            text: 'Planilha de treinos exclusiva',
+            available: true,
+          },
+          {
+            text: 'Guia de dieta',
+            available: false,
+          },
+        ],
       },
       {
         title: 'Plano Semestral',
@@ -117,6 +145,20 @@ const config = {
         color: 'plan3',
         url: '#',
         highlight: false,
+        benefits: [
+          {
+            text: 'Atendimento 24h via whatsapp',
+            available: true,
+          },
+          {
+            text: 'Planilha de treinos exclusiva',
+            available: true,
+          },
+          {
+            text: 'Guia de dieta',
+            available: true,
+          },
+        ],
       },
     ],
   },

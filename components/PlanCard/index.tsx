@@ -7,6 +7,13 @@ import {
   Text,
   useTheme,
 } from '@chakra-ui/react';
+import { MdClose } from 'react-icons/md';
+import { GiCheckMark } from 'react-icons/gi';
+
+type Benefit = {
+  text: string;
+  available: boolean;
+};
 
 type Props = {
   color: string;
@@ -16,6 +23,7 @@ type Props = {
   info?: string;
   url: string;
   highlight?: boolean;
+  benefits?: Benefit[];
 };
 
 const PlanCard: React.FC<Props> = ({
@@ -26,6 +34,7 @@ const PlanCard: React.FC<Props> = ({
   info,
   url,
   highlight = false,
+  benefits = [],
 }) => {
   const theme = useTheme();
 
@@ -131,6 +140,22 @@ const PlanCard: React.FC<Props> = ({
             {info}
           </Text>
         )}
+      </Flex>
+
+      <Flex direction="column" w="85%" my={2} fontSize="1rem">
+        {benefits.map(benefit => (
+          <Flex
+            color={benefit.available ? 'success' : 'error'}
+            justify="space-between"
+            align="center"
+            key={benefit.text}
+          >
+            <Text color="brand.900" fontSize="0.85rem">
+              {benefit.text}
+            </Text>
+            {benefit.available ? <GiCheckMark /> : <MdClose />}
+          </Flex>
+        ))}
       </Flex>
 
       <Link

@@ -27,6 +27,7 @@ const PlanSection: React.FC = () => {
                 price={plan.price}
                 url={plan.url}
                 highlight={plan.highlight}
+                benefits={plan.benefits}
                 key={plan.title}
               />
             ))}
