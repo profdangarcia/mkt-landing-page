@@ -5,7 +5,7 @@ import CtaSection from '../components/CtaSection';
 import FloatingWhatsapp from '../components/FloatingWhatsapp';
 import Footer from '../components/Footer';
 import PlanSection from '../components/PlanSection';
-import ResultsSection from '../components/ResultsSection';
+import PresentationSection from '../components/PresentationSection';
 import SatisfactionSection from '../components/SatisfactionSection';
 import Seo from '../components/Seo';
 import VideoSection from '../components/VideoSection';
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
           <VideoSection />
         </Flex>
       </Wrapper>
-      <ResultsSection />
+      <PresentationSection />
       <CtaSection />
       <About />
       <PlanSection />

@@ -3,17 +3,17 @@ import Image from 'next/image';
 import config from '../../helpers/config';
 import Wrapper from '../Wrapper';
 
-const ResultsSection: React.FC = () => {
-  const { results } = config;
+const PresentationSection: React.FC = () => {
+  const { presentation } = config;
   return (
     <Box w="100%" bg="brand.600" py={8}>
       <Wrapper>
         <Flex direction="column" w="100%" gap={12} justify="center">
           <Heading textAlign="center" color="brand.800">
-            {results.title}
+            {presentation.title}
           </Heading>
           <Flex direction="column" gap={8} w="100%">
-            {results.items.map((result, index) => {
+            {presentation.items.map((result, index) => {
               const isEven = index % 2 === 0;
               return (
                 <Flex
@@ -58,4 +58,4 @@ const ResultsSection: React.FC = () => {
   );
 };
 
-export default ResultsSection;
+export default PresentationSection;
