@@ -4,6 +4,7 @@ import About from '../components/About';
 import CtaSection from '../components/CtaSection';
 import FloatingWhatsapp from '../components/FloatingWhatsapp';
 import Footer from '../components/Footer';
+import PlanSection from '../components/PlanSection';
 import ResultsSection from '../components/ResultsSection';
 import Seo from '../components/Seo';
 import VideoSection from '../components/VideoSection';
@@ -33,7 +34,7 @@ const Home: React.FC = () => {
       <ResultsSection />
       <CtaSection />
       <About />
-      <CtaSection />
+      <PlanSection />
       <Footer />
       <FloatingWhatsapp />
     </>

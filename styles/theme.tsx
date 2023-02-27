@@ -13,6 +13,13 @@ export const theme = extendTheme({
       700: palette[700],
       600: palette[600],
     },
+    plans: {
+      plan1: palette.plan1,
+      plan2: palette.plan2,
+      plan3: palette.plan3,
+    },
+    success: palette.success,
+    error: palette.error,
   },
   fonts: {
     heading: 'Roboto',

@@ -61,6 +61,11 @@ const config = {
     800: '#009B9D',
     700: '#00CACA',
     600: '#F9F9F9',
+    plan1: '#009B9D',
+    plan2: '#C23DF3',
+    plan3: '#FCB353',
+    success: '#458A62',
+    error: '#FF1800',
   },
   socials: [
     {
@@ -82,6 +87,38 @@ const config = {
   whatsapp: {
     number: '999999999',
     message: 'Olá, vi seu trabalho pelo site MKT Landing Page!',
+  },
+  plans: {
+    title: 'Encontre o plano certo para você:',
+    items: [
+      {
+        title: 'Plano Mensal',
+        subtitle: 'Cabe no seu bolso',
+        price: '59,90',
+        info: '',
+        color: 'plan1',
+        url: '#',
+        highlight: false,
+      },
+      {
+        title: 'Plano Trimestral',
+        subtitle: 'Melhor custo benefício',
+        price: '49,90',
+        info: 'Total de R$ 149,70',
+        color: 'plan2',
+        url: '#',
+        highlight: true,
+      },
+      {
+        title: 'Plano Semestral',
+        subtitle: 'A maior economia',
+        price: '40,90',
+        info: 'Total de R$ 245,40',
+        color: 'plan3',
+        url: '#',
+        highlight: false,
+      },
+    ],
   },
 };
 
