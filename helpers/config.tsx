@@ -120,6 +120,12 @@ const config = {
       },
     ],
   },
+  guarantee: {
+    title: 'RISCO ZERO',
+    image: '/guarantee.png',
+    message:
+      'O RISCO É TODO MEU: Se você cumprir todo o passo a passo que eu proponho no programa e ainda assim não vir resultados em até 03 meses, eu devolvo cada centavo do seu dinheiro!',
+  },
 };
 
 export default config;

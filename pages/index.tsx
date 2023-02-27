@@ -6,6 +6,7 @@ import FloatingWhatsapp from '../components/FloatingWhatsapp';
 import Footer from '../components/Footer';
 import PlanSection from '../components/PlanSection';
 import ResultsSection from '../components/ResultsSection';
+import SatisfactionSection from '../components/SatisfactionSection';
 import Seo from '../components/Seo';
 import VideoSection from '../components/VideoSection';
 import Wrapper from '../components/Wrapper';
@@ -35,6 +36,8 @@ const Home: React.FC = () => {
       <CtaSection />
       <About />
       <PlanSection />
+      <SatisfactionSection />
+      <CtaSection />
       <Footer />
       <FloatingWhatsapp />
     </>
