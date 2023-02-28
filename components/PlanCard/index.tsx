@@ -41,11 +41,11 @@ const PlanCard: React.FC<Props> = ({
   const highlightDefault = {
     position: 'absolute',
     content: '""',
-    'z-index': '-1',
+    zIndex: '-1',
     display: 'block',
     border: `0.4375rem solid ${theme.colors.plans[color]}`,
-    'border-top-color': 'transparent',
-    'border-left-color': 'transparent',
+    borderTopColor: 'transparent',
+    borderLeftColor: 'transparent',
   };
 
   return (

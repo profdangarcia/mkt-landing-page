@@ -170,6 +170,18 @@ const config = {
   },
   testimonial: {
     title: 'VEJA NOSSOS RESULTADOS',
+    items: [
+      {
+        image: '/testimonials/testimonial.png',
+        text: '',
+        title: 'Testimonial 1',
+      },
+      {
+        image: '/testimonials/testimonial.png',
+        text: '',
+        title: 'Testimonial 2',
+      },
+    ],
   },
 };
 

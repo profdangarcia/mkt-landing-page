@@ -8,6 +8,7 @@ import PlanSection from '../components/PlanSection';
 import PresentationSection from '../components/PresentationSection';
 import SatisfactionSection from '../components/SatisfactionSection';
 import Seo from '../components/Seo';
+import TestimonialSection from '../components/TestimonialSection';
 import VideoSection from '../components/VideoSection';
 import Wrapper from '../components/Wrapper';
 import config from '../helpers/config';
@@ -37,6 +38,7 @@ const Home: React.FC = () => {
       <About />
       <PlanSection />
       <SatisfactionSection />
+      <TestimonialSection />
       <CtaSection />
       <Footer />
       <FloatingWhatsapp />
