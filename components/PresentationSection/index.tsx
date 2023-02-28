@@ -36,9 +36,7 @@ const PresentationSection: React.FC = () => {
                       height={360}
                     />
                   </Box>
-                  <Text
-                    color="brand.900"
-                    fontSize="1.25rem"
+                  <Box
                     order={isEven ? 1 : 2}
                     w={{ base: '100%', md: '50%' }}
                     textAlign={{
@@ -46,8 +44,13 @@ const PresentationSection: React.FC = () => {
                       md: isEven ? 'left' : 'right',
                     }}
                   >
-                    {result.info}
-                  </Text>
+                    <Heading color="brand.900" fontSize="1.5rem" mb={4}>
+                      {result.title}
+                    </Heading>
+                    <Text color="brand.900" fontSize="1.25rem">
+                      {result.info}
+                    </Text>
+                  </Box>
                 </Flex>
               );
             })}
