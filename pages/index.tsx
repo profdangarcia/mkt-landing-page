@@ -34,11 +34,11 @@ const Home: React.FC = () => {
         </Flex>
       </Wrapper>
       <PresentationSection />
-      <CtaSection />
-      <About />
-      <PlanSection />
-      <SatisfactionSection />
       <TestimonialSection />
+      <CtaSection />
+      <SatisfactionSection />
+      <PlanSection />
+      <About />
       <CtaSection />
       <Footer />
       <FloatingWhatsapp />
