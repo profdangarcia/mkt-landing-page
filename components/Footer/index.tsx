@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
             transition="0.5s"
             _hover={{ transform: 'translateY(-0.6rem)' }}
           >
-            <Link href={social.url} isExternal>
+            <Link href={social.url} isExternal aria-label={social.name}>
               {social.icon}
             </Link>
           </Flex>

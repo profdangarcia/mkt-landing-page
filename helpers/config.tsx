@@ -7,7 +7,8 @@ const config = {
     title: 'MKT Landing Page | CTA Helper',
     description: 'Uma página para divulgação de produtos',
     h1: 'MKT Landing Page',
-    thumbnail: 'https://mkt-landing-page-livid.vercel.app/thumbnail.jpg',
+    thumbnail: 'thumbnail.jpg',
+    canonical: 'https://mkt-landing-page-livid.vercel.app/',
   },
   cta: {
     videoId: '9w3o9NHXqu0',
@@ -72,17 +73,17 @@ const config = {
   },
   socials: [
     {
-      name: 'Facebook',
+      name: 'Visite nosso Facebook',
       icon: <BsFacebook />,
       url: '#',
     },
     {
-      name: 'Instagram',
+      name: 'Visite nosso Instagram',
       icon: <BsInstagram />,
       url: '#',
     },
     {
-      name: 'Whatsapp',
+      name: 'Fale conosco pelo Whatsapp',
       icon: <BsWhatsapp />,
       url: '#',
     },

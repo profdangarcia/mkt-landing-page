@@ -38,6 +38,7 @@ const FloatingWhatsapp: React.FC = () => {
       <Link
         isExternal
         href={`https://wa.me/55${whatsapp.number}?text=${whatsapp.message}`}
+        aria-label="Nos envia uma mensagem pelo Whatsapp!"
       >
         <BsWhatsapp />
       </Link>

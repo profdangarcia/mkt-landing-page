@@ -5,7 +5,7 @@ import React from 'react';
 export default class MyDocument extends Document {
   render(): JSX.Element {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
